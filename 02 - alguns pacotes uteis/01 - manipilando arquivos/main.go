@@ -50,5 +50,10 @@ func main() {
 		fmt.Println(string(buffer[:n]))
 	}
 
+	// remover
+	err = os.Remove("arquivo.txt")
+	if err != nil {
+		panic(err)
+	}
 	outroArquivo.Close()
 }
